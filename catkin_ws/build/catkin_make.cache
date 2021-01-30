@@ -1,0 +1,2 @@
+ros_basics_toturials
+-DCATKIN_DEVEL_PREFIX=/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/install -G Unix Makefiles

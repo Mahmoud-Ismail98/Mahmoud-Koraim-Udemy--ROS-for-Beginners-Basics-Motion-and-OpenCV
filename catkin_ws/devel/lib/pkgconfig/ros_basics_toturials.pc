@@ -1,0 +1,8 @@
+prefix=/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/devel
+
+Name: ros_basics_toturials
+Description: Description of ros_basics_toturials
+Version: 0.0.0
+Cflags: -I/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/src/ros_basics_toturials/include
+Libs: -L${prefix}/lib -lros_basics_toturials
+Requires: roscpp rospy std_msgs message_runtime

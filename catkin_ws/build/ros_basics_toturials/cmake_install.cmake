@@ -33,7 +33,43 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ros_basics_toturials/msg" TYPE FILE FILES "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/src/ros_basics_toturials/msg/IoTSensor.msg")
+endif()
+
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ros_basics_toturials/cmake" TYPE FILE FILES "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build/ros_basics_toturials/catkin_generated/installspace/ros_basics_toturials-msg-paths.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/devel/include/ros_basics_toturials")
+endif()
+
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/devel/share/roseus/ros/ros_basics_toturials")
+endif()
+
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/devel/share/common-lisp/ros/ros_basics_toturials")
+endif()
+
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/devel/share/gennodejs/ros/ros_basics_toturials")
+endif()
+
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  execute_process(COMMAND "/usr/bin/python2" -m compileall "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/devel/lib/python2.7/dist-packages/ros_basics_toturials")
+endif()
+
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/devel/lib/python2.7/dist-packages/ros_basics_toturials")
+endif()
+
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build/ros_basics_toturials/catkin_generated/installspace/ros_basics_toturials.pc")
+endif()
+
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ros_basics_toturials/cmake" TYPE FILE FILES "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build/ros_basics_toturials/catkin_generated/installspace/ros_basics_toturials-msg-extras.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")

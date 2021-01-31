@@ -78,6 +78,39 @@ install/fast: preinstall/fast
 	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: install/local
+
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: install/strip
+
+.PHONY : install/strip/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -99,39 +132,6 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
-
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
-
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: install/strip
-
-.PHONY : install/strip/fast
-
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: install/local
-
-.PHONY : install/local/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -166,19 +166,79 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-ros_basics_toturials/CMakeFiles/std_msgs_generate_messages_py.dir/rule:
-	cd "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build" && $(MAKE) -f CMakeFiles/Makefile2 ros_basics_toturials/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-.PHONY : ros_basics_toturials/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+ros_basics_toturials/CMakeFiles/ros_basics_toturials_genpy.dir/rule:
+	cd "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build" && $(MAKE) -f CMakeFiles/Makefile2 ros_basics_toturials/CMakeFiles/ros_basics_toturials_genpy.dir/rule
+.PHONY : ros_basics_toturials/CMakeFiles/ros_basics_toturials_genpy.dir/rule
 
 # Convenience name for target.
-std_msgs_generate_messages_py: ros_basics_toturials/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+ros_basics_toturials_genpy: ros_basics_toturials/CMakeFiles/ros_basics_toturials_genpy.dir/rule
 
-.PHONY : std_msgs_generate_messages_py
+.PHONY : ros_basics_toturials_genpy
 
 # fast build rule for target.
-std_msgs_generate_messages_py/fast:
-	cd "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build" && $(MAKE) -f ros_basics_toturials/CMakeFiles/std_msgs_generate_messages_py.dir/build.make ros_basics_toturials/CMakeFiles/std_msgs_generate_messages_py.dir/build
-.PHONY : std_msgs_generate_messages_py/fast
+ros_basics_toturials_genpy/fast:
+	cd "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build" && $(MAKE) -f ros_basics_toturials/CMakeFiles/ros_basics_toturials_genpy.dir/build.make ros_basics_toturials/CMakeFiles/ros_basics_toturials_genpy.dir/build
+.PHONY : ros_basics_toturials_genpy/fast
+
+# Convenience name for target.
+ros_basics_toturials/CMakeFiles/ros_basics_toturials_generate_messages_py.dir/rule:
+	cd "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build" && $(MAKE) -f CMakeFiles/Makefile2 ros_basics_toturials/CMakeFiles/ros_basics_toturials_generate_messages_py.dir/rule
+.PHONY : ros_basics_toturials/CMakeFiles/ros_basics_toturials_generate_messages_py.dir/rule
+
+# Convenience name for target.
+ros_basics_toturials_generate_messages_py: ros_basics_toturials/CMakeFiles/ros_basics_toturials_generate_messages_py.dir/rule
+
+.PHONY : ros_basics_toturials_generate_messages_py
+
+# fast build rule for target.
+ros_basics_toturials_generate_messages_py/fast:
+	cd "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build" && $(MAKE) -f ros_basics_toturials/CMakeFiles/ros_basics_toturials_generate_messages_py.dir/build.make ros_basics_toturials/CMakeFiles/ros_basics_toturials_generate_messages_py.dir/build
+.PHONY : ros_basics_toturials_generate_messages_py/fast
+
+# Convenience name for target.
+ros_basics_toturials/CMakeFiles/ros_basics_toturials_gennodejs.dir/rule:
+	cd "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build" && $(MAKE) -f CMakeFiles/Makefile2 ros_basics_toturials/CMakeFiles/ros_basics_toturials_gennodejs.dir/rule
+.PHONY : ros_basics_toturials/CMakeFiles/ros_basics_toturials_gennodejs.dir/rule
+
+# Convenience name for target.
+ros_basics_toturials_gennodejs: ros_basics_toturials/CMakeFiles/ros_basics_toturials_gennodejs.dir/rule
+
+.PHONY : ros_basics_toturials_gennodejs
+
+# fast build rule for target.
+ros_basics_toturials_gennodejs/fast:
+	cd "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build" && $(MAKE) -f ros_basics_toturials/CMakeFiles/ros_basics_toturials_gennodejs.dir/build.make ros_basics_toturials/CMakeFiles/ros_basics_toturials_gennodejs.dir/build
+.PHONY : ros_basics_toturials_gennodejs/fast
+
+# Convenience name for target.
+ros_basics_toturials/CMakeFiles/ros_basics_toturials_generate_messages_nodejs.dir/rule:
+	cd "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build" && $(MAKE) -f CMakeFiles/Makefile2 ros_basics_toturials/CMakeFiles/ros_basics_toturials_generate_messages_nodejs.dir/rule
+.PHONY : ros_basics_toturials/CMakeFiles/ros_basics_toturials_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+ros_basics_toturials_generate_messages_nodejs: ros_basics_toturials/CMakeFiles/ros_basics_toturials_generate_messages_nodejs.dir/rule
+
+.PHONY : ros_basics_toturials_generate_messages_nodejs
+
+# fast build rule for target.
+ros_basics_toturials_generate_messages_nodejs/fast:
+	cd "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build" && $(MAKE) -f ros_basics_toturials/CMakeFiles/ros_basics_toturials_generate_messages_nodejs.dir/build.make ros_basics_toturials/CMakeFiles/ros_basics_toturials_generate_messages_nodejs.dir/build
+.PHONY : ros_basics_toturials_generate_messages_nodejs/fast
+
+# Convenience name for target.
+ros_basics_toturials/CMakeFiles/ros_basics_toturials_genlisp.dir/rule:
+	cd "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build" && $(MAKE) -f CMakeFiles/Makefile2 ros_basics_toturials/CMakeFiles/ros_basics_toturials_genlisp.dir/rule
+.PHONY : ros_basics_toturials/CMakeFiles/ros_basics_toturials_genlisp.dir/rule
+
+# Convenience name for target.
+ros_basics_toturials_genlisp: ros_basics_toturials/CMakeFiles/ros_basics_toturials_genlisp.dir/rule
+
+.PHONY : ros_basics_toturials_genlisp
+
+# fast build rule for target.
+ros_basics_toturials_genlisp/fast:
+	cd "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build" && $(MAKE) -f ros_basics_toturials/CMakeFiles/ros_basics_toturials_genlisp.dir/build.make ros_basics_toturials/CMakeFiles/ros_basics_toturials_genlisp.dir/build
+.PHONY : ros_basics_toturials_genlisp/fast
 
 # Convenience name for target.
 ros_basics_toturials/CMakeFiles/roscpp_generate_messages_py.dir/rule:
@@ -226,21 +286,6 @@ rosgraph_msgs_generate_messages_nodejs/fast:
 .PHONY : rosgraph_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
-ros_basics_toturials/CMakeFiles/roscpp_generate_messages_cpp.dir/rule:
-	cd "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build" && $(MAKE) -f CMakeFiles/Makefile2 ros_basics_toturials/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
-.PHONY : ros_basics_toturials/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_cpp: ros_basics_toturials/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
-
-.PHONY : roscpp_generate_messages_cpp
-
-# fast build rule for target.
-roscpp_generate_messages_cpp/fast:
-	cd "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build" && $(MAKE) -f ros_basics_toturials/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make ros_basics_toturials/CMakeFiles/roscpp_generate_messages_cpp.dir/build
-.PHONY : roscpp_generate_messages_cpp/fast
-
-# Convenience name for target.
 ros_basics_toturials/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule:
 	cd "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build" && $(MAKE) -f CMakeFiles/Makefile2 ros_basics_toturials/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
 .PHONY : ros_basics_toturials/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
@@ -286,6 +331,21 @@ roscpp_generate_messages_eus/fast:
 .PHONY : roscpp_generate_messages_eus/fast
 
 # Convenience name for target.
+ros_basics_toturials/CMakeFiles/listener_node.dir/rule:
+	cd "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build" && $(MAKE) -f CMakeFiles/Makefile2 ros_basics_toturials/CMakeFiles/listener_node.dir/rule
+.PHONY : ros_basics_toturials/CMakeFiles/listener_node.dir/rule
+
+# Convenience name for target.
+listener_node: ros_basics_toturials/CMakeFiles/listener_node.dir/rule
+
+.PHONY : listener_node
+
+# fast build rule for target.
+listener_node/fast:
+	cd "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build" && $(MAKE) -f ros_basics_toturials/CMakeFiles/listener_node.dir/build.make ros_basics_toturials/CMakeFiles/listener_node.dir/build
+.PHONY : listener_node/fast
+
+# Convenience name for target.
 ros_basics_toturials/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule:
 	cd "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build" && $(MAKE) -f CMakeFiles/Makefile2 ros_basics_toturials/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
 .PHONY : ros_basics_toturials/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
@@ -316,21 +376,6 @@ rosgraph_msgs_generate_messages_lisp/fast:
 .PHONY : rosgraph_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
-ros_basics_toturials/CMakeFiles/listener_node.dir/rule:
-	cd "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build" && $(MAKE) -f CMakeFiles/Makefile2 ros_basics_toturials/CMakeFiles/listener_node.dir/rule
-.PHONY : ros_basics_toturials/CMakeFiles/listener_node.dir/rule
-
-# Convenience name for target.
-listener_node: ros_basics_toturials/CMakeFiles/listener_node.dir/rule
-
-.PHONY : listener_node
-
-# fast build rule for target.
-listener_node/fast:
-	cd "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build" && $(MAKE) -f ros_basics_toturials/CMakeFiles/listener_node.dir/build.make ros_basics_toturials/CMakeFiles/listener_node.dir/build
-.PHONY : listener_node/fast
-
-# Convenience name for target.
 ros_basics_toturials/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule:
 	cd "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build" && $(MAKE) -f CMakeFiles/Makefile2 ros_basics_toturials/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
 .PHONY : ros_basics_toturials/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
@@ -344,6 +389,21 @@ roscpp_generate_messages_nodejs: ros_basics_toturials/CMakeFiles/roscpp_generate
 roscpp_generate_messages_nodejs/fast:
 	cd "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build" && $(MAKE) -f ros_basics_toturials/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make ros_basics_toturials/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
 .PHONY : roscpp_generate_messages_nodejs/fast
+
+# Convenience name for target.
+ros_basics_toturials/CMakeFiles/_ros_basics_toturials_generate_messages_check_deps_IoTSensor.dir/rule:
+	cd "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build" && $(MAKE) -f CMakeFiles/Makefile2 ros_basics_toturials/CMakeFiles/_ros_basics_toturials_generate_messages_check_deps_IoTSensor.dir/rule
+.PHONY : ros_basics_toturials/CMakeFiles/_ros_basics_toturials_generate_messages_check_deps_IoTSensor.dir/rule
+
+# Convenience name for target.
+_ros_basics_toturials_generate_messages_check_deps_IoTSensor: ros_basics_toturials/CMakeFiles/_ros_basics_toturials_generate_messages_check_deps_IoTSensor.dir/rule
+
+.PHONY : _ros_basics_toturials_generate_messages_check_deps_IoTSensor
+
+# fast build rule for target.
+_ros_basics_toturials_generate_messages_check_deps_IoTSensor/fast:
+	cd "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build" && $(MAKE) -f ros_basics_toturials/CMakeFiles/_ros_basics_toturials_generate_messages_check_deps_IoTSensor.dir/build.make ros_basics_toturials/CMakeFiles/_ros_basics_toturials_generate_messages_check_deps_IoTSensor.dir/build
+.PHONY : _ros_basics_toturials_generate_messages_check_deps_IoTSensor/fast
 
 # Convenience name for target.
 ros_basics_toturials/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule:
@@ -391,6 +451,36 @@ std_msgs_generate_messages_eus/fast:
 .PHONY : std_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
+ros_basics_toturials/CMakeFiles/talker_node.dir/rule:
+	cd "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build" && $(MAKE) -f CMakeFiles/Makefile2 ros_basics_toturials/CMakeFiles/talker_node.dir/rule
+.PHONY : ros_basics_toturials/CMakeFiles/talker_node.dir/rule
+
+# Convenience name for target.
+talker_node: ros_basics_toturials/CMakeFiles/talker_node.dir/rule
+
+.PHONY : talker_node
+
+# fast build rule for target.
+talker_node/fast:
+	cd "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build" && $(MAKE) -f ros_basics_toturials/CMakeFiles/talker_node.dir/build.make ros_basics_toturials/CMakeFiles/talker_node.dir/build
+.PHONY : talker_node/fast
+
+# Convenience name for target.
+ros_basics_toturials/CMakeFiles/ros_basics_toturials_generate_messages_eus.dir/rule:
+	cd "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build" && $(MAKE) -f CMakeFiles/Makefile2 ros_basics_toturials/CMakeFiles/ros_basics_toturials_generate_messages_eus.dir/rule
+.PHONY : ros_basics_toturials/CMakeFiles/ros_basics_toturials_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+ros_basics_toturials_generate_messages_eus: ros_basics_toturials/CMakeFiles/ros_basics_toturials_generate_messages_eus.dir/rule
+
+.PHONY : ros_basics_toturials_generate_messages_eus
+
+# fast build rule for target.
+ros_basics_toturials_generate_messages_eus/fast:
+	cd "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build" && $(MAKE) -f ros_basics_toturials/CMakeFiles/ros_basics_toturials_generate_messages_eus.dir/build.make ros_basics_toturials/CMakeFiles/ros_basics_toturials_generate_messages_eus.dir/build
+.PHONY : ros_basics_toturials_generate_messages_eus/fast
+
+# Convenience name for target.
 ros_basics_toturials/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule:
 	cd "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build" && $(MAKE) -f CMakeFiles/Makefile2 ros_basics_toturials/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
 .PHONY : ros_basics_toturials/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
@@ -406,19 +496,109 @@ std_msgs_generate_messages_lisp/fast:
 .PHONY : std_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
-ros_basics_toturials/CMakeFiles/talker_node.dir/rule:
-	cd "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build" && $(MAKE) -f CMakeFiles/Makefile2 ros_basics_toturials/CMakeFiles/talker_node.dir/rule
-.PHONY : ros_basics_toturials/CMakeFiles/talker_node.dir/rule
+ros_basics_toturials/CMakeFiles/ros_basics_toturials_generate_messages.dir/rule:
+	cd "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build" && $(MAKE) -f CMakeFiles/Makefile2 ros_basics_toturials/CMakeFiles/ros_basics_toturials_generate_messages.dir/rule
+.PHONY : ros_basics_toturials/CMakeFiles/ros_basics_toturials_generate_messages.dir/rule
 
 # Convenience name for target.
-talker_node: ros_basics_toturials/CMakeFiles/talker_node.dir/rule
+ros_basics_toturials_generate_messages: ros_basics_toturials/CMakeFiles/ros_basics_toturials_generate_messages.dir/rule
 
-.PHONY : talker_node
+.PHONY : ros_basics_toturials_generate_messages
 
 # fast build rule for target.
-talker_node/fast:
-	cd "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build" && $(MAKE) -f ros_basics_toturials/CMakeFiles/talker_node.dir/build.make ros_basics_toturials/CMakeFiles/talker_node.dir/build
-.PHONY : talker_node/fast
+ros_basics_toturials_generate_messages/fast:
+	cd "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build" && $(MAKE) -f ros_basics_toturials/CMakeFiles/ros_basics_toturials_generate_messages.dir/build.make ros_basics_toturials/CMakeFiles/ros_basics_toturials_generate_messages.dir/build
+.PHONY : ros_basics_toturials_generate_messages/fast
+
+# Convenience name for target.
+ros_basics_toturials/CMakeFiles/ros_basics_toturials_generate_messages_cpp.dir/rule:
+	cd "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build" && $(MAKE) -f CMakeFiles/Makefile2 ros_basics_toturials/CMakeFiles/ros_basics_toturials_generate_messages_cpp.dir/rule
+.PHONY : ros_basics_toturials/CMakeFiles/ros_basics_toturials_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+ros_basics_toturials_generate_messages_cpp: ros_basics_toturials/CMakeFiles/ros_basics_toturials_generate_messages_cpp.dir/rule
+
+.PHONY : ros_basics_toturials_generate_messages_cpp
+
+# fast build rule for target.
+ros_basics_toturials_generate_messages_cpp/fast:
+	cd "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build" && $(MAKE) -f ros_basics_toturials/CMakeFiles/ros_basics_toturials_generate_messages_cpp.dir/build.make ros_basics_toturials/CMakeFiles/ros_basics_toturials_generate_messages_cpp.dir/build
+.PHONY : ros_basics_toturials_generate_messages_cpp/fast
+
+# Convenience name for target.
+ros_basics_toturials/CMakeFiles/ros_basics_toturials_generate_messages_lisp.dir/rule:
+	cd "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build" && $(MAKE) -f CMakeFiles/Makefile2 ros_basics_toturials/CMakeFiles/ros_basics_toturials_generate_messages_lisp.dir/rule
+.PHONY : ros_basics_toturials/CMakeFiles/ros_basics_toturials_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+ros_basics_toturials_generate_messages_lisp: ros_basics_toturials/CMakeFiles/ros_basics_toturials_generate_messages_lisp.dir/rule
+
+.PHONY : ros_basics_toturials_generate_messages_lisp
+
+# fast build rule for target.
+ros_basics_toturials_generate_messages_lisp/fast:
+	cd "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build" && $(MAKE) -f ros_basics_toturials/CMakeFiles/ros_basics_toturials_generate_messages_lisp.dir/build.make ros_basics_toturials/CMakeFiles/ros_basics_toturials_generate_messages_lisp.dir/build
+.PHONY : ros_basics_toturials_generate_messages_lisp/fast
+
+# Convenience name for target.
+ros_basics_toturials/CMakeFiles/roscpp_generate_messages_cpp.dir/rule:
+	cd "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build" && $(MAKE) -f CMakeFiles/Makefile2 ros_basics_toturials/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+.PHONY : ros_basics_toturials/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_cpp: ros_basics_toturials/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+
+.PHONY : roscpp_generate_messages_cpp
+
+# fast build rule for target.
+roscpp_generate_messages_cpp/fast:
+	cd "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build" && $(MAKE) -f ros_basics_toturials/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make ros_basics_toturials/CMakeFiles/roscpp_generate_messages_cpp.dir/build
+.PHONY : roscpp_generate_messages_cpp/fast
+
+# Convenience name for target.
+ros_basics_toturials/CMakeFiles/ros_basics_toturials_gencpp.dir/rule:
+	cd "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build" && $(MAKE) -f CMakeFiles/Makefile2 ros_basics_toturials/CMakeFiles/ros_basics_toturials_gencpp.dir/rule
+.PHONY : ros_basics_toturials/CMakeFiles/ros_basics_toturials_gencpp.dir/rule
+
+# Convenience name for target.
+ros_basics_toturials_gencpp: ros_basics_toturials/CMakeFiles/ros_basics_toturials_gencpp.dir/rule
+
+.PHONY : ros_basics_toturials_gencpp
+
+# fast build rule for target.
+ros_basics_toturials_gencpp/fast:
+	cd "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build" && $(MAKE) -f ros_basics_toturials/CMakeFiles/ros_basics_toturials_gencpp.dir/build.make ros_basics_toturials/CMakeFiles/ros_basics_toturials_gencpp.dir/build
+.PHONY : ros_basics_toturials_gencpp/fast
+
+# Convenience name for target.
+ros_basics_toturials/CMakeFiles/std_msgs_generate_messages_py.dir/rule:
+	cd "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build" && $(MAKE) -f CMakeFiles/Makefile2 ros_basics_toturials/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+.PHONY : ros_basics_toturials/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_py: ros_basics_toturials/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+
+.PHONY : std_msgs_generate_messages_py
+
+# fast build rule for target.
+std_msgs_generate_messages_py/fast:
+	cd "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build" && $(MAKE) -f ros_basics_toturials/CMakeFiles/std_msgs_generate_messages_py.dir/build.make ros_basics_toturials/CMakeFiles/std_msgs_generate_messages_py.dir/build
+.PHONY : std_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+ros_basics_toturials/CMakeFiles/ros_basics_toturials_geneus.dir/rule:
+	cd "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build" && $(MAKE) -f CMakeFiles/Makefile2 ros_basics_toturials/CMakeFiles/ros_basics_toturials_geneus.dir/rule
+.PHONY : ros_basics_toturials/CMakeFiles/ros_basics_toturials_geneus.dir/rule
+
+# Convenience name for target.
+ros_basics_toturials_geneus: ros_basics_toturials/CMakeFiles/ros_basics_toturials_geneus.dir/rule
+
+.PHONY : ros_basics_toturials_geneus
+
+# fast build rule for target.
+ros_basics_toturials_geneus/fast:
+	cd "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build" && $(MAKE) -f ros_basics_toturials/CMakeFiles/ros_basics_toturials_geneus.dir/build.make ros_basics_toturials/CMakeFiles/ros_basics_toturials_geneus.dir/build
+.PHONY : ros_basics_toturials_geneus/fast
 
 src/topic01_basics/talker_listener/listener.o: src/topic01_basics/talker_listener/listener.cpp.o
 
@@ -482,28 +662,40 @@ help:
 	@echo "... depend"
 	@echo "... list_install_components"
 	@echo "... install"
-	@echo "... std_msgs_generate_messages_py"
+	@echo "... test"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... ros_basics_toturials_genpy"
+	@echo "... ros_basics_toturials_generate_messages_py"
+	@echo "... ros_basics_toturials_gennodejs"
+	@echo "... edit_cache"
+	@echo "... ros_basics_toturials_generate_messages_nodejs"
+	@echo "... ros_basics_toturials_genlisp"
 	@echo "... roscpp_generate_messages_py"
 	@echo "... rosgraph_msgs_generate_messages_eus"
-	@echo "... edit_cache"
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
-	@echo "... rebuild_cache"
-	@echo "... roscpp_generate_messages_cpp"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... std_msgs_generate_messages_cpp"
 	@echo "... roscpp_generate_messages_eus"
+	@echo "... listener_node"
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
-	@echo "... listener_node"
 	@echo "... roscpp_generate_messages_nodejs"
-	@echo "... test"
+	@echo "... _ros_basics_toturials_generate_messages_check_deps_IoTSensor"
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_eus"
-	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... talker_node"
-	@echo "... install/strip"
-	@echo "... install/local"
+	@echo "... ros_basics_toturials_generate_messages_eus"
+	@echo "... std_msgs_generate_messages_lisp"
+	@echo "... ros_basics_toturials_generate_messages"
+	@echo "... ros_basics_toturials_generate_messages_cpp"
+	@echo "... rebuild_cache"
+	@echo "... ros_basics_toturials_generate_messages_lisp"
+	@echo "... roscpp_generate_messages_cpp"
+	@echo "... ros_basics_toturials_gencpp"
+	@echo "... std_msgs_generate_messages_py"
+	@echo "... ros_basics_toturials_geneus"
 	@echo "... src/topic01_basics/talker_listener/listener.o"
 	@echo "... src/topic01_basics/talker_listener/listener.i"
 	@echo "... src/topic01_basics/talker_listener/listener.s"

@@ -55,10 +55,10 @@ add_message_files(
  )
 
 ## Generate services in the 'srv' folder
-# add_service_files(
-#   FILES
-#   AddTwoInts.srv
-# )
+ add_service_files(
+   FILES
+   AddTwoInts.srv
+ )
 
 ## Generate actions in the 'action' folder
 # add_action_files(
@@ -128,7 +128,6 @@ target_link_libraries (talker_node ${catkin_LIBRARIES})
 #listener
 add_executable(listener_node src/topic01_basics/talker_listener/listener.cpp)
 target_link_libraries (listener_node ${catkin_LIBRARIES})
-
 
 
 ## Declare a C++ library

@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/ros_basics_toturials_generate_messages_nodejs"
   "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/devel/share/gennodejs/ros/ros_basics_toturials/msg/IoTSensor.js"
+  "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/devel/share/gennodejs/ros/ros_basics_toturials/srv/AddTwoInts.js"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -57,7 +57,68 @@ include ros_basics_toturials/CMakeFiles/add_two_ints_server.dir/progress.make
 # Include the compile flags for this target's objects.
 include ros_basics_toturials/CMakeFiles/add_two_ints_server.dir/flags.make
 
-ros_basics_toturials/CMakeFiles/add_two_ints_server.dir/requires:
+ros_basics_toturials/CMakeFiles/add_two_ints_server.dir/src/topic01_basics/service/add_two_ints_server.cpp.o: ros_basics_toturials/CMakeFiles/add_two_ints_server.dir/flags.make
+ros_basics_toturials/CMakeFiles/add_two_ints_server.dir/src/topic01_basics/service/add_two_ints_server.cpp.o: /home/korayem/Udemy\ -\ ROS\ for\ Beginners\ Basics,\ Motion,\ and\ OpenCV./catkin_ws/src/ros_basics_toturials/src/topic01_basics/service/add_two_ints_server.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object ros_basics_toturials/CMakeFiles/add_two_ints_server.dir/src/topic01_basics/service/add_two_ints_server.cpp.o"
+	cd "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build/ros_basics_toturials" && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/add_two_ints_server.dir/src/topic01_basics/service/add_two_ints_server.cpp.o -c "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/src/ros_basics_toturials/src/topic01_basics/service/add_two_ints_server.cpp"
+
+ros_basics_toturials/CMakeFiles/add_two_ints_server.dir/src/topic01_basics/service/add_two_ints_server.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/add_two_ints_server.dir/src/topic01_basics/service/add_two_ints_server.cpp.i"
+	cd "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build/ros_basics_toturials" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/src/ros_basics_toturials/src/topic01_basics/service/add_two_ints_server.cpp" > CMakeFiles/add_two_ints_server.dir/src/topic01_basics/service/add_two_ints_server.cpp.i
+
+ros_basics_toturials/CMakeFiles/add_two_ints_server.dir/src/topic01_basics/service/add_two_ints_server.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/add_two_ints_server.dir/src/topic01_basics/service/add_two_ints_server.cpp.s"
+	cd "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build/ros_basics_toturials" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/src/ros_basics_toturials/src/topic01_basics/service/add_two_ints_server.cpp" -o CMakeFiles/add_two_ints_server.dir/src/topic01_basics/service/add_two_ints_server.cpp.s
+
+ros_basics_toturials/CMakeFiles/add_two_ints_server.dir/src/topic01_basics/service/add_two_ints_server.cpp.o.requires:
+
+.PHONY : ros_basics_toturials/CMakeFiles/add_two_ints_server.dir/src/topic01_basics/service/add_two_ints_server.cpp.o.requires
+
+ros_basics_toturials/CMakeFiles/add_two_ints_server.dir/src/topic01_basics/service/add_two_ints_server.cpp.o.provides: ros_basics_toturials/CMakeFiles/add_two_ints_server.dir/src/topic01_basics/service/add_two_ints_server.cpp.o.requires
+	$(MAKE) -f ros_basics_toturials/CMakeFiles/add_two_ints_server.dir/build.make ros_basics_toturials/CMakeFiles/add_two_ints_server.dir/src/topic01_basics/service/add_two_ints_server.cpp.o.provides.build
+.PHONY : ros_basics_toturials/CMakeFiles/add_two_ints_server.dir/src/topic01_basics/service/add_two_ints_server.cpp.o.provides
+
+ros_basics_toturials/CMakeFiles/add_two_ints_server.dir/src/topic01_basics/service/add_two_ints_server.cpp.o.provides.build: ros_basics_toturials/CMakeFiles/add_two_ints_server.dir/src/topic01_basics/service/add_two_ints_server.cpp.o
+
+
+# Object files for target add_two_ints_server
+add_two_ints_server_OBJECTS = \
+"CMakeFiles/add_two_ints_server.dir/src/topic01_basics/service/add_two_ints_server.cpp.o"
+
+# External object files for target add_two_ints_server
+add_two_ints_server_EXTERNAL_OBJECTS =
+
+/home/korayem/Udemy\ -\ ROS\ for\ Beginners\ Basics,\ Motion,\ and\ OpenCV./catkin_ws/devel/lib/ros_basics_toturials/add_two_ints_server: ros_basics_toturials/CMakeFiles/add_two_ints_server.dir/src/topic01_basics/service/add_two_ints_server.cpp.o
+/home/korayem/Udemy\ -\ ROS\ for\ Beginners\ Basics,\ Motion,\ and\ OpenCV./catkin_ws/devel/lib/ros_basics_toturials/add_two_ints_server: ros_basics_toturials/CMakeFiles/add_two_ints_server.dir/build.make
+/home/korayem/Udemy\ -\ ROS\ for\ Beginners\ Basics,\ Motion,\ and\ OpenCV./catkin_ws/devel/lib/ros_basics_toturials/add_two_ints_server: /opt/ros/kinetic/lib/libroscpp.so
+/home/korayem/Udemy\ -\ ROS\ for\ Beginners\ Basics,\ Motion,\ and\ OpenCV./catkin_ws/devel/lib/ros_basics_toturials/add_two_ints_server: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+/home/korayem/Udemy\ -\ ROS\ for\ Beginners\ Basics,\ Motion,\ and\ OpenCV./catkin_ws/devel/lib/ros_basics_toturials/add_two_ints_server: /usr/lib/x86_64-linux-gnu/libboost_signals.so
+/home/korayem/Udemy\ -\ ROS\ for\ Beginners\ Basics,\ Motion,\ and\ OpenCV./catkin_ws/devel/lib/ros_basics_toturials/add_two_ints_server: /opt/ros/kinetic/lib/librosconsole.so
+/home/korayem/Udemy\ -\ ROS\ for\ Beginners\ Basics,\ Motion,\ and\ OpenCV./catkin_ws/devel/lib/ros_basics_toturials/add_two_ints_server: /opt/ros/kinetic/lib/librosconsole_log4cxx.so
+/home/korayem/Udemy\ -\ ROS\ for\ Beginners\ Basics,\ Motion,\ and\ OpenCV./catkin_ws/devel/lib/ros_basics_toturials/add_two_ints_server: /opt/ros/kinetic/lib/librosconsole_backend_interface.so
+/home/korayem/Udemy\ -\ ROS\ for\ Beginners\ Basics,\ Motion,\ and\ OpenCV./catkin_ws/devel/lib/ros_basics_toturials/add_two_ints_server: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/home/korayem/Udemy\ -\ ROS\ for\ Beginners\ Basics,\ Motion,\ and\ OpenCV./catkin_ws/devel/lib/ros_basics_toturials/add_two_ints_server: /usr/lib/x86_64-linux-gnu/libboost_regex.so
+/home/korayem/Udemy\ -\ ROS\ for\ Beginners\ Basics,\ Motion,\ and\ OpenCV./catkin_ws/devel/lib/ros_basics_toturials/add_two_ints_server: /opt/ros/kinetic/lib/libxmlrpcpp.so
+/home/korayem/Udemy\ -\ ROS\ for\ Beginners\ Basics,\ Motion,\ and\ OpenCV./catkin_ws/devel/lib/ros_basics_toturials/add_two_ints_server: /opt/ros/kinetic/lib/libroscpp_serialization.so
+/home/korayem/Udemy\ -\ ROS\ for\ Beginners\ Basics,\ Motion,\ and\ OpenCV./catkin_ws/devel/lib/ros_basics_toturials/add_two_ints_server: /opt/ros/kinetic/lib/librostime.so
+/home/korayem/Udemy\ -\ ROS\ for\ Beginners\ Basics,\ Motion,\ and\ OpenCV./catkin_ws/devel/lib/ros_basics_toturials/add_two_ints_server: /opt/ros/kinetic/lib/libcpp_common.so
+/home/korayem/Udemy\ -\ ROS\ for\ Beginners\ Basics,\ Motion,\ and\ OpenCV./catkin_ws/devel/lib/ros_basics_toturials/add_two_ints_server: /usr/lib/x86_64-linux-gnu/libboost_system.so
+/home/korayem/Udemy\ -\ ROS\ for\ Beginners\ Basics,\ Motion,\ and\ OpenCV./catkin_ws/devel/lib/ros_basics_toturials/add_two_ints_server: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+/home/korayem/Udemy\ -\ ROS\ for\ Beginners\ Basics,\ Motion,\ and\ OpenCV./catkin_ws/devel/lib/ros_basics_toturials/add_two_ints_server: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
+/home/korayem/Udemy\ -\ ROS\ for\ Beginners\ Basics,\ Motion,\ and\ OpenCV./catkin_ws/devel/lib/ros_basics_toturials/add_two_ints_server: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+/home/korayem/Udemy\ -\ ROS\ for\ Beginners\ Basics,\ Motion,\ and\ OpenCV./catkin_ws/devel/lib/ros_basics_toturials/add_two_ints_server: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
+/home/korayem/Udemy\ -\ ROS\ for\ Beginners\ Basics,\ Motion,\ and\ OpenCV./catkin_ws/devel/lib/ros_basics_toturials/add_two_ints_server: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/korayem/Udemy\ -\ ROS\ for\ Beginners\ Basics,\ Motion,\ and\ OpenCV./catkin_ws/devel/lib/ros_basics_toturials/add_two_ints_server: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
+/home/korayem/Udemy\ -\ ROS\ for\ Beginners\ Basics,\ Motion,\ and\ OpenCV./catkin_ws/devel/lib/ros_basics_toturials/add_two_ints_server: ros_basics_toturials/CMakeFiles/add_two_ints_server.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable \"/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/devel/lib/ros_basics_toturials/add_two_ints_server\""
+	cd "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build/ros_basics_toturials" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/add_two_ints_server.dir/link.txt --verbose=$(VERBOSE)
+
+# Rule to build all files generated by this target.
+ros_basics_toturials/CMakeFiles/add_two_ints_server.dir/build: /home/korayem/Udemy\ -\ ROS\ for\ Beginners\ Basics,\ Motion,\ and\ OpenCV./catkin_ws/devel/lib/ros_basics_toturials/add_two_ints_server
+
+.PHONY : ros_basics_toturials/CMakeFiles/add_two_ints_server.dir/build
+
+ros_basics_toturials/CMakeFiles/add_two_ints_server.dir/requires: ros_basics_toturials/CMakeFiles/add_two_ints_server.dir/src/topic01_basics/service/add_two_ints_server.cpp.o.requires
 
 .PHONY : ros_basics_toturials/CMakeFiles/add_two_ints_server.dir/requires
 

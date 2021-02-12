@@ -283,30 +283,17 @@ gtest_main/fast:
 .PHONY : gtest_main/fast
 
 #=============================================================================
-# Target rules for targets named add_two_ints_client
+# Target rules for targets named turtlesim_cleaner_node
 
 # Build rule for target.
-add_two_ints_client: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 add_two_ints_client
-.PHONY : add_two_ints_client
+turtlesim_cleaner_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 turtlesim_cleaner_node
+.PHONY : turtlesim_cleaner_node
 
 # fast build rule for target.
-add_two_ints_client/fast:
-	$(MAKE) -f ros_basics_toturials/CMakeFiles/add_two_ints_client.dir/build.make ros_basics_toturials/CMakeFiles/add_two_ints_client.dir/build
-.PHONY : add_two_ints_client/fast
-
-#=============================================================================
-# Target rules for targets named add_two_ints_server
-
-# Build rule for target.
-add_two_ints_server: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 add_two_ints_server
-.PHONY : add_two_ints_server
-
-# fast build rule for target.
-add_two_ints_server/fast:
-	$(MAKE) -f ros_basics_toturials/CMakeFiles/add_two_ints_server.dir/build.make ros_basics_toturials/CMakeFiles/add_two_ints_server.dir/build
-.PHONY : add_two_ints_server/fast
+turtlesim_cleaner_node/fast:
+	$(MAKE) -f ros_basics_toturials/CMakeFiles/turtlesim_cleaner_node.dir/build.make ros_basics_toturials/CMakeFiles/turtlesim_cleaner_node.dir/build
+.PHONY : turtlesim_cleaner_node/fast
 
 #=============================================================================
 # Target rules for targets named ros_basics_toturials_genpy
@@ -720,8 +707,7 @@ help:
 	@echo "... gmock_main"
 	@echo "... gtest"
 	@echo "... gtest_main"
-	@echo "... add_two_ints_client"
-	@echo "... add_two_ints_server"
+	@echo "... turtlesim_cleaner_node"
 	@echo "... ros_basics_toturials_genpy"
 	@echo "... ros_basics_toturials_generate_messages_py"
 	@echo "... ros_basics_toturials_gennodejs"

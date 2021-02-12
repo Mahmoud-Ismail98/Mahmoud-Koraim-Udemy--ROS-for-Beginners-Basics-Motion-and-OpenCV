@@ -128,17 +128,19 @@ target_link_libraries (talker_node ${catkin_LIBRARIES})
 #listener
 add_executable(listener_node src/topic01_basics/talker_listener/listener.cpp)
 target_link_libraries (listener_node ${catkin_LIBRARIES})
-
-#add_two_ints_server
-add_executable(add_two_ints_server src/topic01_basics/service/add_two_ints_server.cpp)
-target_link_libraries(add_two_ints_server ${catkin_LIBRARIES})
-add_dependencies(add_two_ints_server ros_basics_toturials_gencpp)
-
-#add_two_ints_client
-add_executable(add_two_ints_client src/topic01_basics/service/add_two_ints_client.cpp)
-target_link_libraries(add_two_ints_client ${catkin_LIBRARIES})
-add_dependencies(add_two_ints_client ros_basics_toturials_gencpp)
-
+#
+##add_two_ints_server
+#add_executable(add_two_ints_server src/topic01_basics/service/add_two_ints_server.cpp)
+#target_link_libraries(add_two_ints_server ${catkin_LIBRARIES})
+#add_dependencies(add_two_ints_server ros_basics_toturials_gencpp)
+#
+##add_two_ints_client
+#add_executable(add_two_ints_client src/topic01_basics/service/add_two_ints_client.cpp)
+#target_link_libraries(add_two_ints_client ${catkin_LIBRARIES})
+#add_dependencies(add_two_ints_client ros_basics_toturials_gencpp)
+#
+add_executable(turtlesim_cleaner_node src/topic01_basics/turtlesim_cleaner/robot_cleaner.cpp)
+target_link_libraries (turtlesim_cleaner_node ${catkin_LIBRARIES})
 ## Declare a C++ library
 # add_library(${PROJECT_NAME}
 #   src/${PROJECT_NAME}/ros_basics_toturials.cpp

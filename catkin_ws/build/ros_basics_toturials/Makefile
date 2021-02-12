@@ -166,34 +166,19 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-ros_basics_toturials/CMakeFiles/add_two_ints_client.dir/rule:
-	cd "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build" && $(MAKE) -f CMakeFiles/Makefile2 ros_basics_toturials/CMakeFiles/add_two_ints_client.dir/rule
-.PHONY : ros_basics_toturials/CMakeFiles/add_two_ints_client.dir/rule
+ros_basics_toturials/CMakeFiles/turtlesim_cleaner_node.dir/rule:
+	cd "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build" && $(MAKE) -f CMakeFiles/Makefile2 ros_basics_toturials/CMakeFiles/turtlesim_cleaner_node.dir/rule
+.PHONY : ros_basics_toturials/CMakeFiles/turtlesim_cleaner_node.dir/rule
 
 # Convenience name for target.
-add_two_ints_client: ros_basics_toturials/CMakeFiles/add_two_ints_client.dir/rule
+turtlesim_cleaner_node: ros_basics_toturials/CMakeFiles/turtlesim_cleaner_node.dir/rule
 
-.PHONY : add_two_ints_client
+.PHONY : turtlesim_cleaner_node
 
 # fast build rule for target.
-add_two_ints_client/fast:
-	cd "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build" && $(MAKE) -f ros_basics_toturials/CMakeFiles/add_two_ints_client.dir/build.make ros_basics_toturials/CMakeFiles/add_two_ints_client.dir/build
-.PHONY : add_two_ints_client/fast
-
-# Convenience name for target.
-ros_basics_toturials/CMakeFiles/add_two_ints_server.dir/rule:
-	cd "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build" && $(MAKE) -f CMakeFiles/Makefile2 ros_basics_toturials/CMakeFiles/add_two_ints_server.dir/rule
-.PHONY : ros_basics_toturials/CMakeFiles/add_two_ints_server.dir/rule
-
-# Convenience name for target.
-add_two_ints_server: ros_basics_toturials/CMakeFiles/add_two_ints_server.dir/rule
-
-.PHONY : add_two_ints_server
-
-# fast build rule for target.
-add_two_ints_server/fast:
-	cd "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build" && $(MAKE) -f ros_basics_toturials/CMakeFiles/add_two_ints_server.dir/build.make ros_basics_toturials/CMakeFiles/add_two_ints_server.dir/build
-.PHONY : add_two_ints_server/fast
+turtlesim_cleaner_node/fast:
+	cd "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build" && $(MAKE) -f ros_basics_toturials/CMakeFiles/turtlesim_cleaner_node.dir/build.make ros_basics_toturials/CMakeFiles/turtlesim_cleaner_node.dir/build
+.PHONY : turtlesim_cleaner_node/fast
 
 # Convenience name for target.
 ros_basics_toturials/CMakeFiles/ros_basics_toturials_genpy.dir/rule:
@@ -645,33 +630,6 @@ ros_basics_toturials_geneus/fast:
 	cd "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build" && $(MAKE) -f ros_basics_toturials/CMakeFiles/ros_basics_toturials_geneus.dir/build.make ros_basics_toturials/CMakeFiles/ros_basics_toturials_geneus.dir/build
 .PHONY : ros_basics_toturials_geneus/fast
 
-src/topic01_basics/service/add_two_ints_server.o: src/topic01_basics/service/add_two_ints_server.cpp.o
-
-.PHONY : src/topic01_basics/service/add_two_ints_server.o
-
-# target to build an object file
-src/topic01_basics/service/add_two_ints_server.cpp.o:
-	cd "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build" && $(MAKE) -f ros_basics_toturials/CMakeFiles/add_two_ints_server.dir/build.make ros_basics_toturials/CMakeFiles/add_two_ints_server.dir/src/topic01_basics/service/add_two_ints_server.cpp.o
-.PHONY : src/topic01_basics/service/add_two_ints_server.cpp.o
-
-src/topic01_basics/service/add_two_ints_server.i: src/topic01_basics/service/add_two_ints_server.cpp.i
-
-.PHONY : src/topic01_basics/service/add_two_ints_server.i
-
-# target to preprocess a source file
-src/topic01_basics/service/add_two_ints_server.cpp.i:
-	cd "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build" && $(MAKE) -f ros_basics_toturials/CMakeFiles/add_two_ints_server.dir/build.make ros_basics_toturials/CMakeFiles/add_two_ints_server.dir/src/topic01_basics/service/add_two_ints_server.cpp.i
-.PHONY : src/topic01_basics/service/add_two_ints_server.cpp.i
-
-src/topic01_basics/service/add_two_ints_server.s: src/topic01_basics/service/add_two_ints_server.cpp.s
-
-.PHONY : src/topic01_basics/service/add_two_ints_server.s
-
-# target to generate assembly for a file
-src/topic01_basics/service/add_two_ints_server.cpp.s:
-	cd "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build" && $(MAKE) -f ros_basics_toturials/CMakeFiles/add_two_ints_server.dir/build.make ros_basics_toturials/CMakeFiles/add_two_ints_server.dir/src/topic01_basics/service/add_two_ints_server.cpp.s
-.PHONY : src/topic01_basics/service/add_two_ints_server.cpp.s
-
 src/topic01_basics/talker_listener/listener.o: src/topic01_basics/talker_listener/listener.cpp.o
 
 .PHONY : src/topic01_basics/talker_listener/listener.o
@@ -726,6 +684,33 @@ src/topic01_basics/talker_listener/talker.cpp.s:
 	cd "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build" && $(MAKE) -f ros_basics_toturials/CMakeFiles/talker_node.dir/build.make ros_basics_toturials/CMakeFiles/talker_node.dir/src/topic01_basics/talker_listener/talker.cpp.s
 .PHONY : src/topic01_basics/talker_listener/talker.cpp.s
 
+src/topic01_basics/turtlesim_cleaner/robot_cleaner.o: src/topic01_basics/turtlesim_cleaner/robot_cleaner.cpp.o
+
+.PHONY : src/topic01_basics/turtlesim_cleaner/robot_cleaner.o
+
+# target to build an object file
+src/topic01_basics/turtlesim_cleaner/robot_cleaner.cpp.o:
+	cd "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build" && $(MAKE) -f ros_basics_toturials/CMakeFiles/turtlesim_cleaner_node.dir/build.make ros_basics_toturials/CMakeFiles/turtlesim_cleaner_node.dir/src/topic01_basics/turtlesim_cleaner/robot_cleaner.cpp.o
+.PHONY : src/topic01_basics/turtlesim_cleaner/robot_cleaner.cpp.o
+
+src/topic01_basics/turtlesim_cleaner/robot_cleaner.i: src/topic01_basics/turtlesim_cleaner/robot_cleaner.cpp.i
+
+.PHONY : src/topic01_basics/turtlesim_cleaner/robot_cleaner.i
+
+# target to preprocess a source file
+src/topic01_basics/turtlesim_cleaner/robot_cleaner.cpp.i:
+	cd "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build" && $(MAKE) -f ros_basics_toturials/CMakeFiles/turtlesim_cleaner_node.dir/build.make ros_basics_toturials/CMakeFiles/turtlesim_cleaner_node.dir/src/topic01_basics/turtlesim_cleaner/robot_cleaner.cpp.i
+.PHONY : src/topic01_basics/turtlesim_cleaner/robot_cleaner.cpp.i
+
+src/topic01_basics/turtlesim_cleaner/robot_cleaner.s: src/topic01_basics/turtlesim_cleaner/robot_cleaner.cpp.s
+
+.PHONY : src/topic01_basics/turtlesim_cleaner/robot_cleaner.s
+
+# target to generate assembly for a file
+src/topic01_basics/turtlesim_cleaner/robot_cleaner.cpp.s:
+	cd "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build" && $(MAKE) -f ros_basics_toturials/CMakeFiles/turtlesim_cleaner_node.dir/build.make ros_basics_toturials/CMakeFiles/turtlesim_cleaner_node.dir/src/topic01_basics/turtlesim_cleaner/robot_cleaner.cpp.s
+.PHONY : src/topic01_basics/turtlesim_cleaner/robot_cleaner.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -737,8 +722,7 @@ help:
 	@echo "... test"
 	@echo "... install/local"
 	@echo "... install/strip"
-	@echo "... add_two_ints_client"
-	@echo "... add_two_ints_server"
+	@echo "... turtlesim_cleaner_node"
 	@echo "... ros_basics_toturials_genpy"
 	@echo "... ros_basics_toturials_generate_messages_py"
 	@echo "... ros_basics_toturials_gennodejs"
@@ -771,15 +755,15 @@ help:
 	@echo "... ros_basics_toturials_gencpp"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... ros_basics_toturials_geneus"
-	@echo "... src/topic01_basics/service/add_two_ints_server.o"
-	@echo "... src/topic01_basics/service/add_two_ints_server.i"
-	@echo "... src/topic01_basics/service/add_two_ints_server.s"
 	@echo "... src/topic01_basics/talker_listener/listener.o"
 	@echo "... src/topic01_basics/talker_listener/listener.i"
 	@echo "... src/topic01_basics/talker_listener/listener.s"
 	@echo "... src/topic01_basics/talker_listener/talker.o"
 	@echo "... src/topic01_basics/talker_listener/talker.i"
 	@echo "... src/topic01_basics/talker_listener/talker.s"
+	@echo "... src/topic01_basics/turtlesim_cleaner/robot_cleaner.o"
+	@echo "... src/topic01_basics/turtlesim_cleaner/robot_cleaner.i"
+	@echo "... src/topic01_basics/turtlesim_cleaner/robot_cleaner.s"
 .PHONY : help
 
 

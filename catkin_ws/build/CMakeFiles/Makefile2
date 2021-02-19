@@ -390,7 +390,7 @@ clean: gtest/gtest/CMakeFiles/gtest_main.dir/clean
 # Directory level rules for directory ros_basics_toturials
 
 # Convenience name for "all" pass in the directory.
-ros_basics_toturials/all: ros_basics_toturials/CMakeFiles/turtlesim_cleaner_node.dir/all
+ros_basics_toturials/all: ros_basics_toturials/CMakeFiles/turtlesim_clean_node.dir/all
 ros_basics_toturials/all: ros_basics_toturials/CMakeFiles/listener_node.dir/all
 ros_basics_toturials/all: ros_basics_toturials/CMakeFiles/talker_node.dir/all
 ros_basics_toturials/all: ros_basics_toturials/CMakeFiles/ros_basics_toturials_generate_messages.dir/all
@@ -398,7 +398,7 @@ ros_basics_toturials/all: ros_basics_toturials/CMakeFiles/ros_basics_toturials_g
 .PHONY : ros_basics_toturials/all
 
 # Convenience name for "clean" pass in the directory.
-ros_basics_toturials/clean: ros_basics_toturials/CMakeFiles/turtlesim_cleaner_node.dir/clean
+ros_basics_toturials/clean: ros_basics_toturials/CMakeFiles/turtlesim_clean_node.dir/clean
 ros_basics_toturials/clean: ros_basics_toturials/CMakeFiles/ros_basics_toturials_genpy.dir/clean
 ros_basics_toturials/clean: ros_basics_toturials/CMakeFiles/ros_basics_toturials_generate_messages_py.dir/clean
 ros_basics_toturials/clean: ros_basics_toturials/CMakeFiles/ros_basics_toturials_gennodejs.dir/clean
@@ -438,39 +438,39 @@ ros_basics_toturials/preinstall:
 .PHONY : ros_basics_toturials/preinstall
 
 #=============================================================================
-# Target rules for target ros_basics_toturials/CMakeFiles/turtlesim_cleaner_node.dir
+# Target rules for target ros_basics_toturials/CMakeFiles/turtlesim_clean_node.dir
 
 # All Build rule for target.
-ros_basics_toturials/CMakeFiles/turtlesim_cleaner_node.dir/all:
-	$(MAKE) -f ros_basics_toturials/CMakeFiles/turtlesim_cleaner_node.dir/build.make ros_basics_toturials/CMakeFiles/turtlesim_cleaner_node.dir/depend
-	$(MAKE) -f ros_basics_toturials/CMakeFiles/turtlesim_cleaner_node.dir/build.make ros_basics_toturials/CMakeFiles/turtlesim_cleaner_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build/CMakeFiles" --progress-num=29,30 "Built target turtlesim_cleaner_node"
-.PHONY : ros_basics_toturials/CMakeFiles/turtlesim_cleaner_node.dir/all
+ros_basics_toturials/CMakeFiles/turtlesim_clean_node.dir/all:
+	$(MAKE) -f ros_basics_toturials/CMakeFiles/turtlesim_clean_node.dir/build.make ros_basics_toturials/CMakeFiles/turtlesim_clean_node.dir/depend
+	$(MAKE) -f ros_basics_toturials/CMakeFiles/turtlesim_clean_node.dir/build.make ros_basics_toturials/CMakeFiles/turtlesim_clean_node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build/CMakeFiles" --progress-num=29,30 "Built target turtlesim_clean_node"
+.PHONY : ros_basics_toturials/CMakeFiles/turtlesim_clean_node.dir/all
 
 # Include target in all.
-all: ros_basics_toturials/CMakeFiles/turtlesim_cleaner_node.dir/all
+all: ros_basics_toturials/CMakeFiles/turtlesim_clean_node.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-ros_basics_toturials/CMakeFiles/turtlesim_cleaner_node.dir/rule: cmake_check_build_system
+ros_basics_toturials/CMakeFiles/turtlesim_clean_node.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build/CMakeFiles" 2
-	$(MAKE) -f CMakeFiles/Makefile2 ros_basics_toturials/CMakeFiles/turtlesim_cleaner_node.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 ros_basics_toturials/CMakeFiles/turtlesim_clean_node.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build/CMakeFiles" 0
-.PHONY : ros_basics_toturials/CMakeFiles/turtlesim_cleaner_node.dir/rule
+.PHONY : ros_basics_toturials/CMakeFiles/turtlesim_clean_node.dir/rule
 
 # Convenience name for target.
-turtlesim_cleaner_node: ros_basics_toturials/CMakeFiles/turtlesim_cleaner_node.dir/rule
+turtlesim_clean_node: ros_basics_toturials/CMakeFiles/turtlesim_clean_node.dir/rule
 
-.PHONY : turtlesim_cleaner_node
-
-# clean rule for target.
-ros_basics_toturials/CMakeFiles/turtlesim_cleaner_node.dir/clean:
-	$(MAKE) -f ros_basics_toturials/CMakeFiles/turtlesim_cleaner_node.dir/build.make ros_basics_toturials/CMakeFiles/turtlesim_cleaner_node.dir/clean
-.PHONY : ros_basics_toturials/CMakeFiles/turtlesim_cleaner_node.dir/clean
+.PHONY : turtlesim_clean_node
 
 # clean rule for target.
-clean: ros_basics_toturials/CMakeFiles/turtlesim_cleaner_node.dir/clean
+ros_basics_toturials/CMakeFiles/turtlesim_clean_node.dir/clean:
+	$(MAKE) -f ros_basics_toturials/CMakeFiles/turtlesim_clean_node.dir/build.make ros_basics_toturials/CMakeFiles/turtlesim_clean_node.dir/clean
+.PHONY : ros_basics_toturials/CMakeFiles/turtlesim_clean_node.dir/clean
+
+# clean rule for target.
+clean: ros_basics_toturials/CMakeFiles/turtlesim_clean_node.dir/clean
 
 .PHONY : clean
 

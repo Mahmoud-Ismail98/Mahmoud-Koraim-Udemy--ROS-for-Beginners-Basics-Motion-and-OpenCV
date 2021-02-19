@@ -33,7 +33,7 @@
 /home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build/ros_basics_toturials/CMakeFiles/test.dir
 /home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build/ros_basics_toturials/CMakeFiles/install/local.dir
 /home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build/ros_basics_toturials/CMakeFiles/install/strip.dir
-/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build/ros_basics_toturials/CMakeFiles/turtlesim_cleaner_node.dir
+/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build/ros_basics_toturials/CMakeFiles/turtlesim_clean_node.dir
 /home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build/ros_basics_toturials/CMakeFiles/ros_basics_toturials_genpy.dir
 /home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build/ros_basics_toturials/CMakeFiles/ros_basics_toturials_generate_messages_py.dir
 /home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build/ros_basics_toturials/CMakeFiles/ros_basics_toturials_gennodejs.dir

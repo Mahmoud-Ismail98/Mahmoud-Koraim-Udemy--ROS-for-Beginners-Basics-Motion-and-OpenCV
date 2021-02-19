@@ -214,7 +214,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "gtest/CMakeFiles/gmock_main.dir/DependInfo.cmake"
   "gtest/gtest/CMakeFiles/gtest.dir/DependInfo.cmake"
   "gtest/gtest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
-  "ros_basics_toturials/CMakeFiles/turtlesim_cleaner_node.dir/DependInfo.cmake"
+  "ros_basics_toturials/CMakeFiles/turtlesim_clean_node.dir/DependInfo.cmake"
   "ros_basics_toturials/CMakeFiles/ros_basics_toturials_genpy.dir/DependInfo.cmake"
   "ros_basics_toturials/CMakeFiles/ros_basics_toturials_generate_messages_py.dir/DependInfo.cmake"
   "ros_basics_toturials/CMakeFiles/ros_basics_toturials_gennodejs.dir/DependInfo.cmake"

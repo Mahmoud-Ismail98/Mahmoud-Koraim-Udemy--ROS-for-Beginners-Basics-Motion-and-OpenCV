@@ -166,19 +166,19 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-ros_basics_toturials/CMakeFiles/turtlesim_cleaner_node.dir/rule:
-	cd "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build" && $(MAKE) -f CMakeFiles/Makefile2 ros_basics_toturials/CMakeFiles/turtlesim_cleaner_node.dir/rule
-.PHONY : ros_basics_toturials/CMakeFiles/turtlesim_cleaner_node.dir/rule
+ros_basics_toturials/CMakeFiles/turtlesim_clean_node.dir/rule:
+	cd "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build" && $(MAKE) -f CMakeFiles/Makefile2 ros_basics_toturials/CMakeFiles/turtlesim_clean_node.dir/rule
+.PHONY : ros_basics_toturials/CMakeFiles/turtlesim_clean_node.dir/rule
 
 # Convenience name for target.
-turtlesim_cleaner_node: ros_basics_toturials/CMakeFiles/turtlesim_cleaner_node.dir/rule
+turtlesim_clean_node: ros_basics_toturials/CMakeFiles/turtlesim_clean_node.dir/rule
 
-.PHONY : turtlesim_cleaner_node
+.PHONY : turtlesim_clean_node
 
 # fast build rule for target.
-turtlesim_cleaner_node/fast:
-	cd "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build" && $(MAKE) -f ros_basics_toturials/CMakeFiles/turtlesim_cleaner_node.dir/build.make ros_basics_toturials/CMakeFiles/turtlesim_cleaner_node.dir/build
-.PHONY : turtlesim_cleaner_node/fast
+turtlesim_clean_node/fast:
+	cd "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build" && $(MAKE) -f ros_basics_toturials/CMakeFiles/turtlesim_clean_node.dir/build.make ros_basics_toturials/CMakeFiles/turtlesim_clean_node.dir/build
+.PHONY : turtlesim_clean_node/fast
 
 # Convenience name for target.
 ros_basics_toturials/CMakeFiles/ros_basics_toturials_genpy.dir/rule:
@@ -684,32 +684,32 @@ src/topic01_basics/talker_listener/talker.cpp.s:
 	cd "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build" && $(MAKE) -f ros_basics_toturials/CMakeFiles/talker_node.dir/build.make ros_basics_toturials/CMakeFiles/talker_node.dir/src/topic01_basics/talker_listener/talker.cpp.s
 .PHONY : src/topic01_basics/talker_listener/talker.cpp.s
 
-src/topic01_basics/turtlesim_cleaner/robot_cleaner.o: src/topic01_basics/turtlesim_cleaner/robot_cleaner.cpp.o
+src/topic02_motion/turtlesim_cleaner/robot_cleaner.o: src/topic02_motion/turtlesim_cleaner/robot_cleaner.cpp.o
 
-.PHONY : src/topic01_basics/turtlesim_cleaner/robot_cleaner.o
+.PHONY : src/topic02_motion/turtlesim_cleaner/robot_cleaner.o
 
 # target to build an object file
-src/topic01_basics/turtlesim_cleaner/robot_cleaner.cpp.o:
-	cd "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build" && $(MAKE) -f ros_basics_toturials/CMakeFiles/turtlesim_cleaner_node.dir/build.make ros_basics_toturials/CMakeFiles/turtlesim_cleaner_node.dir/src/topic01_basics/turtlesim_cleaner/robot_cleaner.cpp.o
-.PHONY : src/topic01_basics/turtlesim_cleaner/robot_cleaner.cpp.o
+src/topic02_motion/turtlesim_cleaner/robot_cleaner.cpp.o:
+	cd "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build" && $(MAKE) -f ros_basics_toturials/CMakeFiles/turtlesim_clean_node.dir/build.make ros_basics_toturials/CMakeFiles/turtlesim_clean_node.dir/src/topic02_motion/turtlesim_cleaner/robot_cleaner.cpp.o
+.PHONY : src/topic02_motion/turtlesim_cleaner/robot_cleaner.cpp.o
 
-src/topic01_basics/turtlesim_cleaner/robot_cleaner.i: src/topic01_basics/turtlesim_cleaner/robot_cleaner.cpp.i
+src/topic02_motion/turtlesim_cleaner/robot_cleaner.i: src/topic02_motion/turtlesim_cleaner/robot_cleaner.cpp.i
 
-.PHONY : src/topic01_basics/turtlesim_cleaner/robot_cleaner.i
+.PHONY : src/topic02_motion/turtlesim_cleaner/robot_cleaner.i
 
 # target to preprocess a source file
-src/topic01_basics/turtlesim_cleaner/robot_cleaner.cpp.i:
-	cd "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build" && $(MAKE) -f ros_basics_toturials/CMakeFiles/turtlesim_cleaner_node.dir/build.make ros_basics_toturials/CMakeFiles/turtlesim_cleaner_node.dir/src/topic01_basics/turtlesim_cleaner/robot_cleaner.cpp.i
-.PHONY : src/topic01_basics/turtlesim_cleaner/robot_cleaner.cpp.i
+src/topic02_motion/turtlesim_cleaner/robot_cleaner.cpp.i:
+	cd "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build" && $(MAKE) -f ros_basics_toturials/CMakeFiles/turtlesim_clean_node.dir/build.make ros_basics_toturials/CMakeFiles/turtlesim_clean_node.dir/src/topic02_motion/turtlesim_cleaner/robot_cleaner.cpp.i
+.PHONY : src/topic02_motion/turtlesim_cleaner/robot_cleaner.cpp.i
 
-src/topic01_basics/turtlesim_cleaner/robot_cleaner.s: src/topic01_basics/turtlesim_cleaner/robot_cleaner.cpp.s
+src/topic02_motion/turtlesim_cleaner/robot_cleaner.s: src/topic02_motion/turtlesim_cleaner/robot_cleaner.cpp.s
 
-.PHONY : src/topic01_basics/turtlesim_cleaner/robot_cleaner.s
+.PHONY : src/topic02_motion/turtlesim_cleaner/robot_cleaner.s
 
 # target to generate assembly for a file
-src/topic01_basics/turtlesim_cleaner/robot_cleaner.cpp.s:
-	cd "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build" && $(MAKE) -f ros_basics_toturials/CMakeFiles/turtlesim_cleaner_node.dir/build.make ros_basics_toturials/CMakeFiles/turtlesim_cleaner_node.dir/src/topic01_basics/turtlesim_cleaner/robot_cleaner.cpp.s
-.PHONY : src/topic01_basics/turtlesim_cleaner/robot_cleaner.cpp.s
+src/topic02_motion/turtlesim_cleaner/robot_cleaner.cpp.s:
+	cd "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build" && $(MAKE) -f ros_basics_toturials/CMakeFiles/turtlesim_clean_node.dir/build.make ros_basics_toturials/CMakeFiles/turtlesim_clean_node.dir/src/topic02_motion/turtlesim_cleaner/robot_cleaner.cpp.s
+.PHONY : src/topic02_motion/turtlesim_cleaner/robot_cleaner.cpp.s
 
 # Help Target
 help:
@@ -722,7 +722,7 @@ help:
 	@echo "... test"
 	@echo "... install/local"
 	@echo "... install/strip"
-	@echo "... turtlesim_cleaner_node"
+	@echo "... turtlesim_clean_node"
 	@echo "... ros_basics_toturials_genpy"
 	@echo "... ros_basics_toturials_generate_messages_py"
 	@echo "... ros_basics_toturials_gennodejs"
@@ -761,9 +761,9 @@ help:
 	@echo "... src/topic01_basics/talker_listener/talker.o"
 	@echo "... src/topic01_basics/talker_listener/talker.i"
 	@echo "... src/topic01_basics/talker_listener/talker.s"
-	@echo "... src/topic01_basics/turtlesim_cleaner/robot_cleaner.o"
-	@echo "... src/topic01_basics/turtlesim_cleaner/robot_cleaner.i"
-	@echo "... src/topic01_basics/turtlesim_cleaner/robot_cleaner.s"
+	@echo "... src/topic02_motion/turtlesim_cleaner/robot_cleaner.o"
+	@echo "... src/topic02_motion/turtlesim_cleaner/robot_cleaner.i"
+	@echo "... src/topic02_motion/turtlesim_cleaner/robot_cleaner.s"
 .PHONY : help
 
 

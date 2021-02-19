@@ -57,68 +57,7 @@ include ros_basics_toturials/CMakeFiles/turtlesim_cleaner_node.dir/progress.make
 # Include the compile flags for this target's objects.
 include ros_basics_toturials/CMakeFiles/turtlesim_cleaner_node.dir/flags.make
 
-ros_basics_toturials/CMakeFiles/turtlesim_cleaner_node.dir/src/topic01_basics/turtlesim_cleaner/robot_cleaner.cpp.o: ros_basics_toturials/CMakeFiles/turtlesim_cleaner_node.dir/flags.make
-ros_basics_toturials/CMakeFiles/turtlesim_cleaner_node.dir/src/topic01_basics/turtlesim_cleaner/robot_cleaner.cpp.o: /home/korayem/Udemy\ -\ ROS\ for\ Beginners\ Basics,\ Motion,\ and\ OpenCV./catkin_ws/src/ros_basics_toturials/src/topic01_basics/turtlesim_cleaner/robot_cleaner.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object ros_basics_toturials/CMakeFiles/turtlesim_cleaner_node.dir/src/topic01_basics/turtlesim_cleaner/robot_cleaner.cpp.o"
-	cd "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build/ros_basics_toturials" && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/turtlesim_cleaner_node.dir/src/topic01_basics/turtlesim_cleaner/robot_cleaner.cpp.o -c "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/src/ros_basics_toturials/src/topic01_basics/turtlesim_cleaner/robot_cleaner.cpp"
-
-ros_basics_toturials/CMakeFiles/turtlesim_cleaner_node.dir/src/topic01_basics/turtlesim_cleaner/robot_cleaner.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/turtlesim_cleaner_node.dir/src/topic01_basics/turtlesim_cleaner/robot_cleaner.cpp.i"
-	cd "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build/ros_basics_toturials" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/src/ros_basics_toturials/src/topic01_basics/turtlesim_cleaner/robot_cleaner.cpp" > CMakeFiles/turtlesim_cleaner_node.dir/src/topic01_basics/turtlesim_cleaner/robot_cleaner.cpp.i
-
-ros_basics_toturials/CMakeFiles/turtlesim_cleaner_node.dir/src/topic01_basics/turtlesim_cleaner/robot_cleaner.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/turtlesim_cleaner_node.dir/src/topic01_basics/turtlesim_cleaner/robot_cleaner.cpp.s"
-	cd "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build/ros_basics_toturials" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/src/ros_basics_toturials/src/topic01_basics/turtlesim_cleaner/robot_cleaner.cpp" -o CMakeFiles/turtlesim_cleaner_node.dir/src/topic01_basics/turtlesim_cleaner/robot_cleaner.cpp.s
-
-ros_basics_toturials/CMakeFiles/turtlesim_cleaner_node.dir/src/topic01_basics/turtlesim_cleaner/robot_cleaner.cpp.o.requires:
-
-.PHONY : ros_basics_toturials/CMakeFiles/turtlesim_cleaner_node.dir/src/topic01_basics/turtlesim_cleaner/robot_cleaner.cpp.o.requires
-
-ros_basics_toturials/CMakeFiles/turtlesim_cleaner_node.dir/src/topic01_basics/turtlesim_cleaner/robot_cleaner.cpp.o.provides: ros_basics_toturials/CMakeFiles/turtlesim_cleaner_node.dir/src/topic01_basics/turtlesim_cleaner/robot_cleaner.cpp.o.requires
-	$(MAKE) -f ros_basics_toturials/CMakeFiles/turtlesim_cleaner_node.dir/build.make ros_basics_toturials/CMakeFiles/turtlesim_cleaner_node.dir/src/topic01_basics/turtlesim_cleaner/robot_cleaner.cpp.o.provides.build
-.PHONY : ros_basics_toturials/CMakeFiles/turtlesim_cleaner_node.dir/src/topic01_basics/turtlesim_cleaner/robot_cleaner.cpp.o.provides
-
-ros_basics_toturials/CMakeFiles/turtlesim_cleaner_node.dir/src/topic01_basics/turtlesim_cleaner/robot_cleaner.cpp.o.provides.build: ros_basics_toturials/CMakeFiles/turtlesim_cleaner_node.dir/src/topic01_basics/turtlesim_cleaner/robot_cleaner.cpp.o
-
-
-# Object files for target turtlesim_cleaner_node
-turtlesim_cleaner_node_OBJECTS = \
-"CMakeFiles/turtlesim_cleaner_node.dir/src/topic01_basics/turtlesim_cleaner/robot_cleaner.cpp.o"
-
-# External object files for target turtlesim_cleaner_node
-turtlesim_cleaner_node_EXTERNAL_OBJECTS =
-
-/home/korayem/Udemy\ -\ ROS\ for\ Beginners\ Basics,\ Motion,\ and\ OpenCV./catkin_ws/devel/lib/ros_basics_toturials/turtlesim_cleaner_node: ros_basics_toturials/CMakeFiles/turtlesim_cleaner_node.dir/src/topic01_basics/turtlesim_cleaner/robot_cleaner.cpp.o
-/home/korayem/Udemy\ -\ ROS\ for\ Beginners\ Basics,\ Motion,\ and\ OpenCV./catkin_ws/devel/lib/ros_basics_toturials/turtlesim_cleaner_node: ros_basics_toturials/CMakeFiles/turtlesim_cleaner_node.dir/build.make
-/home/korayem/Udemy\ -\ ROS\ for\ Beginners\ Basics,\ Motion,\ and\ OpenCV./catkin_ws/devel/lib/ros_basics_toturials/turtlesim_cleaner_node: /opt/ros/kinetic/lib/libroscpp.so
-/home/korayem/Udemy\ -\ ROS\ for\ Beginners\ Basics,\ Motion,\ and\ OpenCV./catkin_ws/devel/lib/ros_basics_toturials/turtlesim_cleaner_node: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
-/home/korayem/Udemy\ -\ ROS\ for\ Beginners\ Basics,\ Motion,\ and\ OpenCV./catkin_ws/devel/lib/ros_basics_toturials/turtlesim_cleaner_node: /usr/lib/x86_64-linux-gnu/libboost_signals.so
-/home/korayem/Udemy\ -\ ROS\ for\ Beginners\ Basics,\ Motion,\ and\ OpenCV./catkin_ws/devel/lib/ros_basics_toturials/turtlesim_cleaner_node: /opt/ros/kinetic/lib/librosconsole.so
-/home/korayem/Udemy\ -\ ROS\ for\ Beginners\ Basics,\ Motion,\ and\ OpenCV./catkin_ws/devel/lib/ros_basics_toturials/turtlesim_cleaner_node: /opt/ros/kinetic/lib/librosconsole_log4cxx.so
-/home/korayem/Udemy\ -\ ROS\ for\ Beginners\ Basics,\ Motion,\ and\ OpenCV./catkin_ws/devel/lib/ros_basics_toturials/turtlesim_cleaner_node: /opt/ros/kinetic/lib/librosconsole_backend_interface.so
-/home/korayem/Udemy\ -\ ROS\ for\ Beginners\ Basics,\ Motion,\ and\ OpenCV./catkin_ws/devel/lib/ros_basics_toturials/turtlesim_cleaner_node: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/home/korayem/Udemy\ -\ ROS\ for\ Beginners\ Basics,\ Motion,\ and\ OpenCV./catkin_ws/devel/lib/ros_basics_toturials/turtlesim_cleaner_node: /usr/lib/x86_64-linux-gnu/libboost_regex.so
-/home/korayem/Udemy\ -\ ROS\ for\ Beginners\ Basics,\ Motion,\ and\ OpenCV./catkin_ws/devel/lib/ros_basics_toturials/turtlesim_cleaner_node: /opt/ros/kinetic/lib/libxmlrpcpp.so
-/home/korayem/Udemy\ -\ ROS\ for\ Beginners\ Basics,\ Motion,\ and\ OpenCV./catkin_ws/devel/lib/ros_basics_toturials/turtlesim_cleaner_node: /opt/ros/kinetic/lib/libroscpp_serialization.so
-/home/korayem/Udemy\ -\ ROS\ for\ Beginners\ Basics,\ Motion,\ and\ OpenCV./catkin_ws/devel/lib/ros_basics_toturials/turtlesim_cleaner_node: /opt/ros/kinetic/lib/librostime.so
-/home/korayem/Udemy\ -\ ROS\ for\ Beginners\ Basics,\ Motion,\ and\ OpenCV./catkin_ws/devel/lib/ros_basics_toturials/turtlesim_cleaner_node: /opt/ros/kinetic/lib/libcpp_common.so
-/home/korayem/Udemy\ -\ ROS\ for\ Beginners\ Basics,\ Motion,\ and\ OpenCV./catkin_ws/devel/lib/ros_basics_toturials/turtlesim_cleaner_node: /usr/lib/x86_64-linux-gnu/libboost_system.so
-/home/korayem/Udemy\ -\ ROS\ for\ Beginners\ Basics,\ Motion,\ and\ OpenCV./catkin_ws/devel/lib/ros_basics_toturials/turtlesim_cleaner_node: /usr/lib/x86_64-linux-gnu/libboost_thread.so
-/home/korayem/Udemy\ -\ ROS\ for\ Beginners\ Basics,\ Motion,\ and\ OpenCV./catkin_ws/devel/lib/ros_basics_toturials/turtlesim_cleaner_node: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
-/home/korayem/Udemy\ -\ ROS\ for\ Beginners\ Basics,\ Motion,\ and\ OpenCV./catkin_ws/devel/lib/ros_basics_toturials/turtlesim_cleaner_node: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
-/home/korayem/Udemy\ -\ ROS\ for\ Beginners\ Basics,\ Motion,\ and\ OpenCV./catkin_ws/devel/lib/ros_basics_toturials/turtlesim_cleaner_node: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
-/home/korayem/Udemy\ -\ ROS\ for\ Beginners\ Basics,\ Motion,\ and\ OpenCV./catkin_ws/devel/lib/ros_basics_toturials/turtlesim_cleaner_node: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/korayem/Udemy\ -\ ROS\ for\ Beginners\ Basics,\ Motion,\ and\ OpenCV./catkin_ws/devel/lib/ros_basics_toturials/turtlesim_cleaner_node: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
-/home/korayem/Udemy\ -\ ROS\ for\ Beginners\ Basics,\ Motion,\ and\ OpenCV./catkin_ws/devel/lib/ros_basics_toturials/turtlesim_cleaner_node: ros_basics_toturials/CMakeFiles/turtlesim_cleaner_node.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable \"/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/devel/lib/ros_basics_toturials/turtlesim_cleaner_node\""
-	cd "/home/korayem/Udemy - ROS for Beginners Basics, Motion, and OpenCV./catkin_ws/build/ros_basics_toturials" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/turtlesim_cleaner_node.dir/link.txt --verbose=$(VERBOSE)
-
-# Rule to build all files generated by this target.
-ros_basics_toturials/CMakeFiles/turtlesim_cleaner_node.dir/build: /home/korayem/Udemy\ -\ ROS\ for\ Beginners\ Basics,\ Motion,\ and\ OpenCV./catkin_ws/devel/lib/ros_basics_toturials/turtlesim_cleaner_node
-
-.PHONY : ros_basics_toturials/CMakeFiles/turtlesim_cleaner_node.dir/build
-
-ros_basics_toturials/CMakeFiles/turtlesim_cleaner_node.dir/requires: ros_basics_toturials/CMakeFiles/turtlesim_cleaner_node.dir/src/topic01_basics/turtlesim_cleaner/robot_cleaner.cpp.o.requires
+ros_basics_toturials/CMakeFiles/turtlesim_cleaner_node.dir/requires:
 
 .PHONY : ros_basics_toturials/CMakeFiles/turtlesim_cleaner_node.dir/requires
 

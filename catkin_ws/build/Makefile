@@ -283,17 +283,17 @@ gtest_main/fast:
 .PHONY : gtest_main/fast
 
 #=============================================================================
-# Target rules for targets named turtlesim_cleaner_node
+# Target rules for targets named turtlesim_clean_node
 
 # Build rule for target.
-turtlesim_cleaner_node: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 turtlesim_cleaner_node
-.PHONY : turtlesim_cleaner_node
+turtlesim_clean_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 turtlesim_clean_node
+.PHONY : turtlesim_clean_node
 
 # fast build rule for target.
-turtlesim_cleaner_node/fast:
-	$(MAKE) -f ros_basics_toturials/CMakeFiles/turtlesim_cleaner_node.dir/build.make ros_basics_toturials/CMakeFiles/turtlesim_cleaner_node.dir/build
-.PHONY : turtlesim_cleaner_node/fast
+turtlesim_clean_node/fast:
+	$(MAKE) -f ros_basics_toturials/CMakeFiles/turtlesim_clean_node.dir/build.make ros_basics_toturials/CMakeFiles/turtlesim_clean_node.dir/build
+.PHONY : turtlesim_clean_node/fast
 
 #=============================================================================
 # Target rules for targets named ros_basics_toturials_genpy
@@ -707,7 +707,7 @@ help:
 	@echo "... gmock_main"
 	@echo "... gtest"
 	@echo "... gtest_main"
-	@echo "... turtlesim_cleaner_node"
+	@echo "... turtlesim_clean_node"
 	@echo "... ros_basics_toturials_genpy"
 	@echo "... ros_basics_toturials_generate_messages_py"
 	@echo "... ros_basics_toturials_gennodejs"
